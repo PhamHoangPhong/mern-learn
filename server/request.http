@@ -1,0 +1,48 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "phongph05",
+    "password": "12345"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "phongph05",
+    "password": "12345"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBmMTUwNWU0ODk5ZTE5MTA4ODBjZDIiLCJpYXQiOjE2NDU0MTc2NzZ9.jb5mInyF9SZMxZk2tdHQvYV7xCvrQWx50p72gC7DYos
+
+{
+    "title": "Hoc Tieng Nhat",
+    "description": "haha",
+    "url": "blockchain.com",
+    "status": "LEARNING"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWU0MmMzYzkyY2NjYmZjODg5YzNhZTEiLCJpYXQiOjE2NDIzNDUwNDB9.oG4AEYRXCqvaZ9WQ7qFsgY_zhlsRUB9u7NefxNACxHE
+
+###
+PUT http://localhost:5000/api/posts/6213b2d16ed2b9d111c4c4da
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjBmMTUwNWU0ODk5ZTE5MTA4ODBjZDIiLCJpYXQiOjE2NDU0NTU5NDF9.ZcV73-JTndhIULJvZcmNv1TxStLrd4r5018AirRtsgY
+Content-Type: application/json
+
+{
+    "title": "Hoc Reactjs",
+    "description": "update hoc react",
+    "url": "blockchain.com",
+    "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/61e42c9c92cccbfc889c3ae5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWRmMDRmNDk3OGY2OTE0ODJlOTExOGMiLCJpYXQiOjE2NDIzOTM3MTZ9.LXsMetYoPB2-3sYHM__u9LiXVXDuPjQz1OV4QFbcrIg

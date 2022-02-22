@@ -1,0 +1,38 @@
+.body {
+  background: url('../public/backgroundLogin.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.landingInner {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title {
+  color: #fff;
+  margin: 0;
+  font-size: 45px;
+}
+
+.title-2 {
+  color: #fff;
+  margin: 0;
+  font-size: 25px;
+}
+
+.body-form {
+  margin-top: 20px;
+}
+
+.text-p {
+  color: #fff;
+  margin: 0;
+}
